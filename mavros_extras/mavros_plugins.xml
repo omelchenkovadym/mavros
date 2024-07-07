@@ -44,6 +44,10 @@ Publishes the status of components running on the companion computer
     <description>@brief Plugin for Debug msgs from MAVLink API
 @plugin debug_value</description>
   </class>
+  <class name="direction_finder" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::extra_plugins::DirectionFinderPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
+    <description>@brief Direction Finder plugin
+@plugin direction_finder</description>
+  </class>
   <class name="distance_sensor" type="mavros::plugin::PluginFactoryTemplate&lt;mavros::extra_plugins::DistanceSensorPlugin&gt;" base_class_type="mavros::plugin::PluginFactory">
     <description>@brief Distance sensor plugin
 @plugin distance_sensor

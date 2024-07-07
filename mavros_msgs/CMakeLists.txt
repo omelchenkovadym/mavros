@@ -88,6 +88,7 @@ set(msg_files
   msg/RCOut.msg
   msg/RTCM.msg
   msg/RTKBaseline.msg
+  msg/RadioSignal.msg
   msg/RadioStatus.msg
   msg/State.msg
   msg/StatusEvent.msg
