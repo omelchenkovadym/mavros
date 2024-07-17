@@ -33,7 +33,8 @@ using namespace std::placeholders;      // NOLINT
 class DirectionFinderPlugin : public plugin::Plugin
 {
 public:
-  explicit DirectionFinderPlugin(plugin::UASPtr uas_) : Plugin(uas_, "direction_finder")
+  explicit DirectionFinderPlugin(plugin::UASPtr uas_)
+  : Plugin(uas_, "direction_finder")
   {
     direction_finder_pub = node->create_publisher<mavros_msgs::msg::RadioSignal>("~/out", 10);
   }
