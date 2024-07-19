@@ -61,6 +61,7 @@ public:
 
 private:
   rclcpp::Publisher<mavros_msgs::msg::RadioSignal>::SharedPtr direction_finder_pub;
+  rclcpp::Subscription<mavros_msgs::msg::RadioSignal>::SharedPtr direction_finder_sub;
 
   void handle_direction_finder(
     const mavlink::mavlink_message_t * msg [[maybe_unused]],
@@ -91,7 +92,7 @@ private:
       get_logger(),
       "DRFFN: output: level" << std::endl << data->level);
 
-    msg.header.stamp = data->header.stamp;
+    //msg.header.stamp = data->header.stamp;
     msg.rate = data->rate;
     msg.heading = data->heading;
     msg.level = data->level;
